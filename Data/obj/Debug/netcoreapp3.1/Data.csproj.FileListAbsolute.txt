@@ -1,0 +1,13 @@
+D:\Programacion\GitHub\SistemaBiblioteca\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+D:\Programacion\GitHub\SistemaBiblioteca\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.json
+D:\Programacion\GitHub\SistemaBiblioteca\Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
+D:\Programacion\GitHub\SistemaBiblioteca\Data\bin\Debug\netcoreapp3.1\Data.dll
+D:\Programacion\GitHub\SistemaBiblioteca\Data\bin\Debug\netcoreapp3.1\Data.pdb
+D:\Programacion\GitHub\SistemaBiblioteca\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+D:\Programacion\GitHub\SistemaBiblioteca\Data\obj\Debug\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programacion\GitHub\SistemaBiblioteca\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+D:\Programacion\GitHub\SistemaBiblioteca\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+D:\Programacion\GitHub\SistemaBiblioteca\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+D:\Programacion\GitHub\SistemaBiblioteca\Data\obj\Debug\netcoreapp3.1\Data.dll
+D:\Programacion\GitHub\SistemaBiblioteca\Data\obj\Debug\netcoreapp3.1\Data.pdb
+D:\Programacion\GitHub\SistemaBiblioteca\Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache
