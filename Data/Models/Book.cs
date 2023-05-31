@@ -25,9 +25,9 @@ namespace Data.Models
         [Required]
         [StringLength(50, MinimumLength = 2)]
         public string Author { get; set; }
-        public string CategoryID { get; set; }
+        public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
-        public bool availability { get; set; }
+        public int Quantity { get; set; }
 
     }
 }

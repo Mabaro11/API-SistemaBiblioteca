@@ -73,5 +73,10 @@ namespace Data.Repositories
 
             return null;
         }
+
+        public async Task<int> GetTransactionsByReaderID(int readerID)
+        {
+            return await bibliotecaDbContext.Transactions.Where(t => t.ReaderID == readerID).CountAsync();
+        }
     }
 }

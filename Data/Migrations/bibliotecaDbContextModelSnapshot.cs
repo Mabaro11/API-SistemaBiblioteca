@@ -28,10 +28,7 @@ namespace Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
-                    b.Property<string>("CategoryID")
-                        .HasColumnType("longtext");
-
-                    b.Property<int?>("CategoryID1")
+                    b.Property<int>("CategoryID")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -51,7 +48,7 @@ namespace Data.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("CategoryID1");
+                    b.HasIndex("CategoryID");
 
                     b.ToTable("Books");
                 });
@@ -115,8 +112,11 @@ namespace Data.Migrations
                     b.Property<int>("ReaderID")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("ReturnDate")
+                    b.Property<DateTime?>("ReturnDate")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("status")
+                        .HasColumnType("longtext");
 
                     b.HasKey("ID");
 
@@ -130,8 +130,10 @@ namespace Data.Migrations
             modelBuilder.Entity("Data.Models.Book", b =>
                 {
                     b.HasOne("Data.Models.Category", "Category")
-                        .WithMany("Books")
-                        .HasForeignKey("CategoryID1");
+                        .WithMany()
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Category");
                 });
@@ -153,11 +155,6 @@ namespace Data.Migrations
                     b.Navigation("Book");
 
                     b.Navigation("Reader");
-                });
-
-            modelBuilder.Entity("Data.Models.Category", b =>
-                {
-                    b.Navigation("Books");
                 });
 #pragma warning restore 612, 618
         }

@@ -11,6 +11,8 @@ namespace ApiBiblioteca
 {
     public class Program
     {
+        
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
@@ -21,6 +23,7 @@ namespace ApiBiblioteca
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    
                 });
     }
 }

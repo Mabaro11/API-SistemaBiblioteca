@@ -50,6 +50,8 @@ namespace Data.Repositories
 
         public async Task<IEnumerable<Book>> GetBooks()
         {
+            
+            //return await bibliotecaDbContext.Books.Include(b => b.Category).ToListAsync() as IEnumerable<Book>;
             return await bibliotecaDbContext.Books.ToListAsync() as IEnumerable<Book>;
         }
 

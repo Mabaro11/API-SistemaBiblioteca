@@ -25,12 +25,17 @@ namespace ApiBiblioteca.Controllers
         {
             try
             {
-                return Ok(await bookRepository.GetBooks());
+                var books = await bookRepository.GetBooks();
+                if(books == null)
+                {
+                    return StatusCode(StatusCodes.Status204NoContent, "No book in database");
+                }
+                return StatusCode(StatusCodes.Status200OK, books);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error retrieving data from the database");
+                    $"Error retrieving data from the database: {e.Message}");
             }
         }
 
