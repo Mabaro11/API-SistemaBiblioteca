@@ -274,3 +274,6 @@ D:\Programacion\GitHub\SistemaBiblioteca-API\ApiBiblioteca\obj\Release\netcoreap
 D:\Programacion\GitHub\SistemaBiblioteca-API\ApiBiblioteca\obj\Release\netcoreapp3.1\ApiBiblioteca.dll
 D:\Programacion\GitHub\SistemaBiblioteca-API\ApiBiblioteca\obj\Release\netcoreapp3.1\ApiBiblioteca.pdb
 D:\Programacion\GitHub\SistemaBiblioteca-API\ApiBiblioteca\obj\Release\netcoreapp3.1\ApiBiblioteca.genruntimeconfig.cache
+D:\Programacion\GitHub\SistemaBiblioteca-API\ApiBiblioteca\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Programacion\GitHub\SistemaBiblioteca-API\ApiBiblioteca\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Programacion\GitHub\SistemaBiblioteca-API\ApiBiblioteca\bin\Release\netcoreapp3.1\Newtonsoft.Json.Bson.dll

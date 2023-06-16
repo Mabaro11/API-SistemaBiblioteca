@@ -8788,11 +8788,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\ApiBiblioteca\\ApiBiblioteca.csproj",
+      "projectUniqueName": "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\ApiBiblioteca\\ApiBiblioteca.csproj",
       "projectName": "ApiBiblioteca",
-      "projectPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\ApiBiblioteca\\ApiBiblioteca.csproj",
+      "projectPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\ApiBiblioteca\\ApiBiblioteca.csproj",
       "packagesPath": "C:\\Users\\Mauri\\.nuget\\packages\\",
-      "outputPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\ApiBiblioteca\\obj\\",
+      "outputPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\ApiBiblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8809,8 +8809,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\Data\\Data.csproj": {
-              "projectPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\Data\\Data.csproj"
+            "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\Data\\Data.csproj": {
+              "projectPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\Data\\Data.csproj"
             }
           }
         }

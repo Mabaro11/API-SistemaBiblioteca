@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\Data\\Data.csproj": {}
+    "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\Data\\Data.csproj": {}
   },
   "projects": {
-    "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\Data\\Data.csproj": {
+    "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\Data\\Data.csproj",
+        "projectUniqueName": "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\Data\\Data.csproj",
+        "projectPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\Mauri\\.nuget\\packages\\",
-        "outputPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca-API\\Data\\obj\\",
+        "outputPath": "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
