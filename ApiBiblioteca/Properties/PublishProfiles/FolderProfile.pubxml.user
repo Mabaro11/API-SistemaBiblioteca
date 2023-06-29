@@ -5,6 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>D:\Programacion\Publicaciones VisualStudio2022\ApiBiblioteca</_PublishTargetUrl>
-    <History>True|2023-06-09T20:40:00.7690884Z;True|2023-02-07T17:52:54.6694935-03:00;</History>
+    <History>True|2023-06-29T21:15:28.5101893Z;True|2023-06-16T19:25:04.6860615-03:00;True|2023-06-09T17:40:00.7690884-03:00;True|2023-02-07T17:52:54.6694935-03:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
 </Project>

@@ -1,6 +1,5 @@
 ﻿using Data.Interfaces;
 using Data.Models;
-using Data.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;

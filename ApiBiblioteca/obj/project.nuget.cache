@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4PWzpYrLe65Kv1bDsgKC8N0c29IgeVlid790ZYbbj+MnuNxr31Z/2vWxHL3hmq6o2QVI+iZpwJeR4ZXB5uz/Kw==",
+  "dgSpecHash": "X9yAwNMxQaso77k/yvfealNJbxWp2kvsoMrVXvhTo7Wn+c59MD2CPcyKo1QlImXh3gxTv2e6J001YXkkqwS28g==",
   "success": true,
-  "projectFilePath": "D:\\Programacion\\GitHub\\SistemaBiblioteca\\API\\ApiBiblioteca\\ApiBiblioteca.csproj",
+  "projectFilePath": "D:\\Programacion\\ISP20\\SistemaBiblioteca\\ApiRest\\ApiBiblioteca\\ApiBiblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mauri\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Mauri\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

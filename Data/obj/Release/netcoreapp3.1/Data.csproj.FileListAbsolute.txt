@@ -24,3 +24,16 @@ D:\Programacion\GitHub\SistemaBiblioteca-API\Data\obj\Release\netcoreapp3.1\Data
 D:\Programacion\GitHub\SistemaBiblioteca-API\Data\obj\Release\netcoreapp3.1\Data.dll
 D:\Programacion\GitHub\SistemaBiblioteca-API\Data\obj\Release\netcoreapp3.1\Data.pdb
 D:\Programacion\GitHub\SistemaBiblioteca-API\Data\obj\Release\netcoreapp3.1\Data.genruntimeconfig.cache
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\bin\Release\netcoreapp3.1\Data.deps.json
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\bin\Release\netcoreapp3.1\Data.runtimeconfig.json
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\bin\Release\netcoreapp3.1\Data.runtimeconfig.dev.json
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\bin\Release\netcoreapp3.1\Data.dll
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\bin\Release\netcoreapp3.1\Data.pdb
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\obj\Release\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\obj\Release\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\obj\Release\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\obj\Release\netcoreapp3.1\Data.AssemblyInfo.cs
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\obj\Release\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\obj\Release\netcoreapp3.1\Data.dll
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\obj\Release\netcoreapp3.1\Data.pdb
+D:\Programacion\ISP20\SistemaBiblioteca\ApiRest\Data\obj\Release\netcoreapp3.1\Data.genruntimeconfig.cache
