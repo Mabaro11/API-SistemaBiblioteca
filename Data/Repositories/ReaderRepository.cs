@@ -48,6 +48,11 @@ namespace Data.Repositories
                 .FirstOrDefaultAsync(e => e.ID == readerId);
         }
 
+        public async Task<int> GetQuantityReaders()
+        {
+            return await bibliotecaDbContext.Readers.CountAsync();
+        }
+
         public async Task<IEnumerable<Reader>> GetReaders()
         {
             return await bibliotecaDbContext.Readers.ToListAsync() as IEnumerable<Reader>;

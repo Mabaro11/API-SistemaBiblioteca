@@ -4,7 +4,10 @@ using Data.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Drawing;
+using System.Text.Json;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ApiBiblioteca.Controllers
 {
@@ -26,6 +29,28 @@ namespace ApiBiblioteca.Controllers
             try
             {
                 return Ok(await readerRepository.GetReaders());
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
+        }
+
+
+        [HttpGet("quantity")]
+        public async Task<ActionResult> GetQuantityReaders()
+        {
+            try
+            {
+                var number = await readerRepository.GetQuantityReaders();
+
+                if (number == 0)
+                {
+                    return StatusCode(StatusCodes.Status204NoContent, "No readers in database");
+                }
+                
+                return Ok(JsonSerializer.Serialize(new { quantity = number } ));
             }
             catch (Exception)
             {

@@ -17,5 +17,6 @@ namespace Data.Interfaces
         Task<Reader> UpdateReader(Reader reader);
         Task<Reader> DeleteReader(int readerId);
         Task<int> GetTransactionsByReaderID(int readerID);
+        Task<int> GetQuantityReaders();
     }
 }

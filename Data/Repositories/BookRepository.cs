@@ -48,11 +48,21 @@ namespace Data.Repositories
                 .FirstOrDefaultAsync(e => e.ID == bookId);
         }
 
+        public async Task<int> GetQuantityBooks()
+        {
+            return await bibliotecaDbContext.Books.CountAsync();
+        }
+
         public async Task<IEnumerable<Book>> GetBooks()
         {
             
             //return await bibliotecaDbContext.Books.Include(b => b.Category).ToListAsync() as IEnumerable<Book>;
             return await bibliotecaDbContext.Books.ToListAsync() as IEnumerable<Book>;
+        }
+
+        public async Task<IEnumerable<Book>> GetBooksCategory(int categoryId)
+        {
+            return await bibliotecaDbContext.Books.Where(x => x.CategoryID == categoryId).ToListAsync();
         }
 
         public async Task<Book> UpdateBook(Book book) 

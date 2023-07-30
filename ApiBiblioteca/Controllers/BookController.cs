@@ -3,6 +3,7 @@ using Data.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ApiBiblioteca.Controllers
@@ -38,6 +39,26 @@ namespace ApiBiblioteca.Controllers
             }
         }
 
+        [HttpGet("quantity")]
+        public async Task<ActionResult> GetQuantityOfBooks()
+        {
+            try
+            {
+                var number = await bookRepository.GetQuantityBooks();
+                if (number == 0)
+                {
+                    return StatusCode(StatusCodes.Status204NoContent, "No book in database");
+                }
+                return StatusCode(StatusCodes.Status200OK, JsonSerializer.Serialize(new { quantity = number }));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error retrieving data from the database: {e.Message}");
+            }
+        }
+
+
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Book>> GetBook(int id)
         {
@@ -56,6 +77,25 @@ namespace ApiBiblioteca.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     "Error retrieving data from the database");
+            }
+        }
+
+        [HttpGet("category/{id:int}")]
+        public async Task<ActionResult> GetBooksCategory(int id)
+        {
+            try
+            {
+                var books = await bookRepository.GetBooksCategory(id);
+                if (books == null)
+                {
+                    return StatusCode(StatusCodes.Status204NoContent, "No book in database");
+                }
+                return StatusCode(StatusCodes.Status200OK, books);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error retrieving data from the database: {e.Message}");
             }
         }
 
