@@ -3,14 +3,16 @@ using System;
 using Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Data.Migrations
 {
     [DbContext(typeof(bibliotecaDbContext))]
-    partial class bibliotecaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230801223613_Lower_Settings")]
+    partial class Lower_Settings
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,6 +42,9 @@ namespace Data.Migrations
 
                     b.Property<bool>("Lower")
                         .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()

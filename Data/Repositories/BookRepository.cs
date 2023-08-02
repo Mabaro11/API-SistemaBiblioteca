@@ -29,13 +29,20 @@ namespace Data.Repositories
             return result.Entity;
         }
 
+        /** 
+            * Este metodo no elimina verdaderamente el registro ya que
+            * si se eliminan las categorias se pierden las relaciones. 
+            * Lo que se hace es dar de baja la categoria.
+        */
         public async Task<Book> DeleteBook(int bookId)
         {
             var result = await bibliotecaDbContext.Books
                  .FirstOrDefaultAsync(e => e.ID == bookId);
             if (result != null)
             {
-                bibliotecaDbContext.Books.Remove(result);
+                result.Lower = true;
+                bibliotecaDbContext.Update(result);
+                //bibliotecaDbContext.Books.Remove(result);
                 await bibliotecaDbContext.SaveChangesAsync();
                 return result;
             }

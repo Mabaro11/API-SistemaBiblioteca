@@ -26,5 +26,7 @@ namespace Data.Models
         [StringLength(50, MinimumLength = 2)]
         public string DNI { get; set; }
 
+        public bool Lower { get; set; }
+
     }
 }

@@ -105,9 +105,11 @@ namespace ApiBiblioteca.Controllers
             {
                 var categoryToDelete = await categoryRepository.GetCategory(id);
 
+                
+
                 if (categoryToDelete == null)
                 {
-                    return NotFound($"Category with Id = {id} not found");
+                    return NotFound($"Category with Id = {id} not found" );
                 }
                 
                 return await categoryRepository.DeleteCategory(id);

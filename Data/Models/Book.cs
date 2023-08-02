@@ -27,7 +27,8 @@ namespace Data.Models
         public string Author { get; set; }
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
-        public int Quantity { get; set; }
+
+        public bool Lower { get; set; }
 
     }
 }

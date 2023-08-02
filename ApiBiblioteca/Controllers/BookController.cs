@@ -152,7 +152,7 @@ namespace ApiBiblioteca.Controllers
 
                 if (bookToDelete == null)
                 {
-                    return NotFound($"Book with Id = {id} not found");
+                    return NotFound( $"Book with Id = {id} not found");
                 }
                 
                 return await bookRepository.DeleteBook(id);
