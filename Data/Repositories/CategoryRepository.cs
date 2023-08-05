@@ -52,13 +52,13 @@ namespace Data.Repositories
 
         public async Task<IEnumerable<Category>> GetCategories()
         {
-            return await bibliotecaDbContext.Categories.ToListAsync() as IEnumerable<Category>;
+            return await bibliotecaDbContext.Categories.Where(e => e.Lower == false).ToListAsync();
         }
 
         public async Task<Category> GetCategory(int categoryId)
         {
             return await bibliotecaDbContext.Categories
-                .FirstOrDefaultAsync(e => e.ID == categoryId);
+                .FirstOrDefaultAsync(e => e.ID == categoryId && e.Lower == false);
         }
 
         public async Task<Category> UpdateCategory(Category category) 

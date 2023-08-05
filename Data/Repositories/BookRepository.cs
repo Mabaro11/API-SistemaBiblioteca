@@ -52,24 +52,33 @@ namespace Data.Repositories
         public async Task<Book> GetBook(int bookId)
         {
             return await bibliotecaDbContext.Books
-                .FirstOrDefaultAsync(e => e.ID == bookId);
+                .FirstOrDefaultAsync(e => e.ID == bookId && e.Lower == false);
+        }
+
+        /*
+         Esta funcion se utiliza al traer las transacciones en Desktop ya que sino arroja una exepcion.
+         */
+        public async Task<IEnumerable<Book>> GetBooksAll()
+        {
+            return await bibliotecaDbContext.Books.ToListAsync();
+
         }
 
         public async Task<int> GetQuantityBooks()
         {
-            return await bibliotecaDbContext.Books.CountAsync();
+            return await bibliotecaDbContext.Books.Where(e => e.Lower == false).CountAsync();
         }
 
         public async Task<IEnumerable<Book>> GetBooks()
         {
             
             //return await bibliotecaDbContext.Books.Include(b => b.Category).ToListAsync() as IEnumerable<Book>;
-            return await bibliotecaDbContext.Books.ToListAsync() as IEnumerable<Book>;
+            return await bibliotecaDbContext.Books.Where(e => e.Lower == false).ToListAsync();
         }
 
         public async Task<IEnumerable<Book>> GetBooksCategory(int categoryId)
         {
-            return await bibliotecaDbContext.Books.Where(x => x.CategoryID == categoryId).ToListAsync();
+            return await bibliotecaDbContext.Books.Where(x => x.CategoryID == categoryId ).ToListAsync();
         }
 
         public async Task<Book> UpdateBook(Book book) 
@@ -92,5 +101,6 @@ namespace Data.Repositories
 
             return null;
         }
+
     }
 }

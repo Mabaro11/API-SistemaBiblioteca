@@ -39,6 +39,25 @@ namespace ApiBiblioteca.Controllers
             }
         }
 
+        [HttpGet("all")]
+        public async Task<ActionResult> GetBooksAll()
+        {
+            try
+            {
+                var books = await bookRepository.GetBooksAll();
+                if (books == null)
+                {
+                    return StatusCode(StatusCodes.Status204NoContent, "No book in database");
+                }
+                return StatusCode(StatusCodes.Status200OK, books);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Error retrieving data from the database: {e.Message}");
+            }
+        }
+
         [HttpGet("quantity")]
         public async Task<ActionResult> GetQuantityOfBooks()
         {

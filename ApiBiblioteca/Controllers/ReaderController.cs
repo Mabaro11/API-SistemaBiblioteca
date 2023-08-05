@@ -37,6 +37,20 @@ namespace ApiBiblioteca.Controllers
             }
         }
 
+        [HttpGet("all")]
+        public async Task<ActionResult> GetReadersAll()
+        {
+            try
+            {
+                return Ok(await readerRepository.GetReadersAll());
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error retrieving data from the database");
+            }
+        }
+
 
         [HttpGet("quantity")]
         public async Task<ActionResult> GetQuantityReaders()
@@ -129,16 +143,10 @@ namespace ApiBiblioteca.Controllers
             try
             {
                 var readerToDelete = await readerRepository.GetReader(id);
-                var transactionsByReader = await readerRepository.GetTransactionsByReaderID(id);
 
                 if (readerToDelete == null)
                 {
                     return NotFound($"Reader with Id = {id} not found");
-                }
-                if(transactionsByReader != 0)
-                {
-                    return StatusCode(StatusCodes.Status405MethodNotAllowed,
-                    $"Error deleting new reader record: Transactions found");
                 }
 
                 return await readerRepository.DeleteReader(id);

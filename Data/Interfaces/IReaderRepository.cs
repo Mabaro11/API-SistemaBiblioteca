@@ -13,6 +13,8 @@ namespace Data.Interfaces
     {
         Task<IEnumerable<Reader>> GetReaders();
         Task<Reader> GetReader(int readerId);
+        Task<IEnumerable<Reader>> GetReadersAll();
+
         Task<Reader> AddReader(Reader reader);
         Task<Reader> UpdateReader(Reader reader);
         Task<Reader> DeleteReader(int readerId);

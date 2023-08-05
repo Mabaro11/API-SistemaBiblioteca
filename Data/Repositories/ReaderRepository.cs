@@ -52,17 +52,26 @@ namespace Data.Repositories
         public async Task<Reader> GetReader(int readerId)
         {
             return await bibliotecaDbContext.Readers
-                .FirstOrDefaultAsync(e => e.ID == readerId);
+                .FirstOrDefaultAsync(e => e.ID == readerId && e.Lower == false);
+        }
+
+        /*
+         Esta funcion se utiliza al traer las transacciones en Desktop ya que sino arroja una exepcion.
+         */
+        public async Task<IEnumerable<Reader>> GetReadersAll()
+        {
+            return await bibliotecaDbContext.Readers.ToListAsync();
+
         }
 
         public async Task<int> GetQuantityReaders()
         {
-            return await bibliotecaDbContext.Readers.CountAsync();
+            return await bibliotecaDbContext.Readers.Where(e => e.Lower == false).CountAsync();
         }
 
         public async Task<IEnumerable<Reader>> GetReaders()
         {
-            return await bibliotecaDbContext.Readers.ToListAsync() as IEnumerable<Reader>;
+            return await bibliotecaDbContext.Readers.Where(e => e.Lower == false).ToListAsync();
         }
 
         public async Task<Reader> UpdateReader(Reader reader) 

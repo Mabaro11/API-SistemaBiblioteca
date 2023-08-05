@@ -12,6 +12,7 @@ namespace Data.Interfaces
     public interface IBookRepository
     {
         Task<IEnumerable<Book>> GetBooks();
+        Task<IEnumerable<Book>> GetBooksAll();
         Task<IEnumerable<Book>> GetBooksCategory(int categoryId);
         Task<Book> GetBook(int bookId);
         Task<Book> AddBook(Book book);
